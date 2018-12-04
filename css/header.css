@@ -1,0 +1,138 @@
+a:hover {
+    text-decoration: none;
+}
+button:hover {
+    box-shadow: none;
+    outline: none;
+}
+.top-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 5px 0px;
+    z-index: 20;
+}
+.top-header .container {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.top-header .row-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.top-header .logo-block img {
+    width: 150px;
+    height: 40px;
+}
+.top-header .soc-block {
+    display: flex;
+}
+.top-header .soc-block>div {
+    margin-right: 15px;
+}
+.top-header .social-block-header>a{
+    margin-right: 15px;
+}
+.top-header i {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    line-height: 2.295;
+}
+.top-header .soc-block a {
+    font-size: 24px;
+    font-family: "FrutigerLTArabic-57Cn";
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+}
+.top-header a:hover,
+.top-header a:hover i,
+.top-header i:hover {
+    color: #0c5596;
+    cursor: pointer;
+}
+.top-header .logo-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-header .search {
+    display: inline-block;
+}
+.top-header .form-search {
+    display: none;
+    opacity: 0;
+    transition: all 2s linear;
+}
+.top-header .block-search.show-search .form-search {
+    animation: show-search .3s linear;
+    animation-fill-mode: forwards;
+    display: inline-block;
+}
+@keyframes show-search {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    100% {
+        opacity: 1;
+        display: inline-block;
+    }
+}
+header.main-navigation {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 20;
+}
+header.main-navigation span.red {
+    font-family: 'FrutigerLTArabic-67BoldCn';
+    font-size: 16px;
+    color: red;
+    position: absolute;
+    right: -15px;
+    top: -10px;
+}
+header.main-navigation .collapse {
+    font-size: 30px;
+    font-family: "FrutigerLTArabic-57Cn";
+    color: rgb(255, 255, 255);
+}
+header.main-navigation .dropdown-menu>li>a {
+    font-size: 20px;
+    color: #337ab7;
+    font-family: "FrutigerLTArabic-57Cn";
+}
+header.main-navigation .collapse a {
+    color: #fff;
+    padding: 10px 0px;
+}
+header.main-navigation .navbar-nav {
+    padding: 10px 0px;
+}
+header.main-navigation .collapse a.active {
+    border-top: 2px solid red;
+    color: #337ab7;
+}
+header.main-navigation .container>.navbar-collapse {
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+.nav>li>a:hover,
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    color: #337ab7;
+    background-color: transparent;
+}
+header.main-navigation .navbar-collapse:after,
+header.main-navigation .navbar-collapse:before {
+    display: none!important;
+}
+header.main-navigation .dropdown-menu {
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: transparent;
+    background-image: none;
+}

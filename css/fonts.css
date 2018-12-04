@@ -1,0 +1,24 @@
+@font-face {
+    font-family: FrutigerLTArabic-45Light;
+    src: url(../fonts/FrutigerLTArabic-45Light.ttf);
+}
+@font-face {
+    font-family: FrutigerLTArabic-47LightCn;
+    src: url(../fonts/FrutigerLTArabic-47LightCn.ttf);
+}
+@font-face {
+    font-family: FrutigerLTArabic-55Roman;
+    src: url(../fonts/FrutigerLTArabic-55Roman.ttf);
+}
+@font-face {
+    font-family: FrutigerLTArabic-57Cn;
+    src: url(../fonts/FrutigerLTArabic-57Cn.ttf);
+}
+@font-face {
+    font-family: FrutigerLTArabic-67BoldCn;
+    src: url(../fonts/FrutigerLTArabic-67BoldCn.ttf);
+}
+@font-face {
+    font-family: FrutigerLTArabic-77BlackCn;
+    src: url(../fonts/FrutigerLTArabic-77BlackCn.ttf);
+}
