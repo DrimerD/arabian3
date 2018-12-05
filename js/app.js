@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
         useTransform: true,
         speed: 400,
         cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-        asNavFor: '.slider-nav',
+        asNavFor: '#main-slider .slider-nav',
         autoplay: true,
         autoPlaySpeed: 5000,
         rtl:true,
@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
     $('#main-slider .slider-nav').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: '.slider-for',
+        asNavFor: '#main-slider .slider-for',
         dots: false,
         focusOnSelect: true,
         infinite: false,
@@ -40,7 +40,7 @@ jQuery(document).ready(function ($) {
         useTransform: true,
         speed: 400,
         cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-        asNavFor: '.slider-nav',
+        asNavFor: '#news-slider .slider-nav',
         autoplay: true,
         autoPlaySpeed: 5000,
         rtl:true,
@@ -50,7 +50,7 @@ jQuery(document).ready(function ($) {
     $('#news-slider .slider-nav').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: '.slider-for',
+        asNavFor: '#news-slider .slider-for',
         dots: false,
         focusOnSelect: true,
         infinite: false,
@@ -80,5 +80,28 @@ jQuery(document).ready(function ($) {
         $(this).text(text);
 
     });
+    if ($(window).width() <= 600) {
+        $("#news-slider .slider-for .description a").text(function(i, text) {
 
+            if (text.length >= 100) {
+                text = text.substring(0, 110);
+                var lastIndex = text.lastIndexOf(" ");
+                text = text.substring(0, lastIndex) + '...';
+            }
+
+            $(this).text(text);
+
+        });
+        $("#news-slider .slider-for .title").text(function(i, text) {
+
+            if (text.length >= 60) {
+                text = text.substring(0, 65);
+                var lastIndex = text.lastIndexOf(" ");
+                text = text.substring(0, lastIndex) + '...';
+            }
+
+            $(this).text(text);
+
+        });
+    }
 });
